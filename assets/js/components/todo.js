@@ -18,6 +18,7 @@ const TodoItem=(data,update)=>{
 
   remove.on('click',(e)=>{
     const idx=state.todos.map(x=>x.text).indexOf(data.text);
+    console.log(data.text);
     console.log(idx);
     console.log(state.todos.map(x=>x.text));
     state.todos.splice(idx,1);
